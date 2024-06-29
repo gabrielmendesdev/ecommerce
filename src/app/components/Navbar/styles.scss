@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #0060b1;
+  width: 100%;
+  .container {
+    background-color: #0060b1;
+  }
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.bot,
+.top {
+  width: 40%;
+}
+
+.mid {
+  width: 30%;
+}
+
+.bot,
+.mid,
+.top {
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.buttonActive {
+  padding-top: 33px;
+  padding-bottom: 27px;
+  transition: 0.3s;
+}
+
+.topActive {
+  margin-top: 5px;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.midActive {
+  margin-bottom: 5px;
+  width: 40%;
+  transform: rotate(-45deg);
+}
+
+.botActive {
+  margin-top: 8px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.342);
+}

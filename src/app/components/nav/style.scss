@@ -1,0 +1,17 @@
+/* Estiliza a barra de rolagem para torná-la invisível */
+.scrollable-list::-webkit-scrollbar {
+  width: 0;
+  /* Remove a largura da barra de rolagem */
+  height: 0;
+  /* Remove a altura da barra de rolagem */
+}
+
+.scrollable-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-border {
+  border-top: 1px solid rgba(255, 255, 255, 0.205);
+}

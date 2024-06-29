@@ -11,8 +11,6 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import Image from "next/image";
-import { SearchInput } from "./SearchInput";
 
 export {
   Avatar,
@@ -25,6 +23,4 @@ export {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
-  Image,
-  SearchInput,
 };
