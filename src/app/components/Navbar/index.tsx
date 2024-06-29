@@ -1,25 +1,12 @@
-import {
-  Avatar,
-  Dropdown,
-  DropdownDivider,
-  DropdownHeader,
-  DropdownItem,
-  Navbar,
-  NavbarBrand,
-  NavbarCollapse,
-  NavbarLink,
-  NavbarToggle,
-} from "flowbite-react";
+import * as Import from "./imports";
 import LogoNinja from "../../assets/navbar/logo-ninja.png";
-import Image from "next/image";
-import { SearchInput } from "./SearchInput";
 
 export function NavbarComponent() {
   return (
     <>
-      <Navbar fluid rounded>
-        <NavbarBrand href="https://flowbite-react.com">
-          <Image
+      <Import.Navbar fluid rounded>
+        <Import.NavbarBrand href="https://flowbite-react.com">
+          <Import.Image
             src={LogoNinja}
             className="mr-3 h-16 w-16"
             alt="Flowbite React Logo"
@@ -27,45 +14,45 @@ export function NavbarComponent() {
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Ninja das Promoções
           </span>
-        </NavbarBrand>
-        <SearchInput className="input-container" />
+        </Import.NavbarBrand>
+        <Import.SearchInput className="input-container" />
         <div className="flex md:order-2">
-          <Dropdown
+          <Import.Dropdown
             arrowIcon={false}
             inline
             label={
-              <Avatar
+              <Import.Avatar
                 alt="User settings"
                 img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                 rounded
               />
             }
           >
-            <DropdownHeader>
+            <Import.DropdownHeader>
               <span className="block text-sm">Bonnie Green</span>
               <span className="block truncate text-sm font-medium">
                 name@flowbite.com
               </span>
-            </DropdownHeader>
-            <DropdownItem>Dashboard</DropdownItem>
-            <DropdownItem>Settings</DropdownItem>
-            <DropdownItem>Earnings</DropdownItem>
-            <DropdownDivider />
-            <DropdownItem>Sign out</DropdownItem>
-          </Dropdown>
-          <NavbarToggle />
+            </Import.DropdownHeader>
+            <Import.DropdownItem>Dashboard</Import.DropdownItem>
+            <Import.DropdownItem>Settings</Import.DropdownItem>
+            <Import.DropdownItem>Earnings</Import.DropdownItem>
+            <Import.DropdownDivider />
+            <Import.DropdownItem>Sign out</Import.DropdownItem>
+          </Import.Dropdown>
+          <Import.NavbarToggle />
         </div>
-        <NavbarCollapse>
-          <NavbarLink href="#" active>
+        <Import.NavbarCollapse>
+          <Import.NavbarLink href="#" active>
             Home
-          </NavbarLink>
-          <NavbarLink href="#">About</NavbarLink>
-          <NavbarLink href="#">Services</NavbarLink>
-          <NavbarLink href="#">Pricing</NavbarLink>
-          <NavbarLink href="#">Contact</NavbarLink>
-        </NavbarCollapse>
-      </Navbar>
-      <SearchInput className="hidden-input-container mx-5" />
+          </Import.NavbarLink>
+          <Import.NavbarLink href="#">About</Import.NavbarLink>
+          <Import.NavbarLink href="#">Services</Import.NavbarLink>
+          <Import.NavbarLink href="#">Pricing</Import.NavbarLink>
+          <Import.NavbarLink href="#">Contact</Import.NavbarLink>
+        </Import.NavbarCollapse>
+      </Import.Navbar>
+      <Import.SearchInput className="hidden-input-container mx-5" />
     </>
   );
 }
