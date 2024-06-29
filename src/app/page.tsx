@@ -1,10 +1,10 @@
 import { Alert } from "flowbite-react";
-import { AlertComponent } from "./components/Alert";
+import { NavbarComponent } from "./components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <AlertComponent />
+      <NavbarComponent />
     </>
   );
 }

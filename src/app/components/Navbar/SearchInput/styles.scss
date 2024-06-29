@@ -1,0 +1,14 @@
+.input-container {
+  width: 50%;
+  display: block;
+  @media (max-width: 1444px) {
+    display: none;
+  }
+}
+
+.hidden-input-container {
+  display: none;
+  @media (max-width: 1444px) {
+    display: block;
+  }
+}
