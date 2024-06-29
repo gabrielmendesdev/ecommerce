@@ -28,7 +28,7 @@ export function NavbarComponent() {
       <nav className="navbar p-3">
         <Import.Navbar fluid rounded className="container m-auto">
           <div
-            className={`${isActive ? "buttonActive" : ""} button`}
+            className={`${isActive ? "buttonActive" : ""} button cursor-pointer`}
             onClick={() => setIsActive(!isActive)}
           >
             <span className={`${isActive ? "topActive" : ""} top`}></span>
