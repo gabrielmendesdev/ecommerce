@@ -1,36 +1,36 @@
-import React from "react";
-import Link from "next/link";
-import "./style.scss";
-import { motion } from "framer-motion";
+import React from 'react'
+import Link from 'next/link'
+import './style.scss'
+import { motion } from 'framer-motion'
 
 const slide = {
   initial: {
-    x: "-80px",
+    x: '-80px'
   },
   enter: (i: number) => ({
-    x: "0px",
+    x: '0px',
     transition: {
       duration: 1,
       ease: [0.76, 0, 0.24, 1],
-      delay: 0.06 * i,
-    },
+      delay: 0.06 * i
+    }
   }),
   exit: (i: number) => ({
-    x: "-80px",
+    x: '-80px',
     transition: {
       duration: 1,
       ease: [0.76, 0, 0.24, 1],
-      delay: 0.05 * i,
-    },
-  }),
-};
+      delay: 0.05 * i
+    }
+  })
+}
 
 interface LinkItemProps {
   data: {
-    index: number;
-    title: string;
-    href: string;
-  };
+    index: number
+    title: string
+    href: string
+  }
 }
 
 const LinkItem: React.FC<LinkItemProps> = ({ data }: any) => {
@@ -47,7 +47,7 @@ const LinkItem: React.FC<LinkItemProps> = ({ data }: any) => {
         <Link href={data.href}>{data.title}</Link>
       </motion.div>
     </>
-  );
-};
+  )
+}
 
-export default LinkItem;
+export default LinkItem

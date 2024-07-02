@@ -4,8 +4,8 @@ import * as Import from './imports'
 import * as Assets from './assets'
 import Image from 'next/image'
 import './styles.scss'
-import Nav from '../Nav/index'
 import { useState } from 'react'
+import MenuBurguer from '../MenuBurguer'
 
 export function NavbarComponent() {
   const [isActive, setIsActive] = useState<boolean>(false)
@@ -13,7 +13,7 @@ export function NavbarComponent() {
   return (
     <>
       <Import.AnimatePresence mode="wait">
-        {isActive && <Nav setIsActive={setIsActive} />}
+        {isActive && <MenuBurguer setIsActive={setIsActive} />}
       </Import.AnimatePresence>
       <div
         className={`w-dvw h-dvh fixed z-10 modal ${isActive ? '' : 'hidden'}`}

@@ -1,27 +1,27 @@
-import "./style.scss";
-import { motion } from "framer-motion";
+import './style.scss'
+import { motion } from 'framer-motion'
 
 const CurveSvg: React.FC = () => {
   const initialPath = `M100 0 L100 ${window.innerHeight} Q200 ${
     window.innerHeight / 2
-  } 100 0`;
+  } 100 0`
   const targetPath = `M100 0 L100 ${window.innerHeight} Q0 ${
     window.innerHeight / 2
-  } 100 0`;
+  } 100 0`
 
   const pathAnimation = {
     initial: {
-      d: initialPath,
+      d: initialPath
     },
     enter: {
       d: targetPath,
-      transition: { duration: 1.2, ease: [0.76, 0, 0.25, 1] },
+      transition: { duration: 1.2, ease: [0.76, 0, 0.25, 1] }
     },
     exit: {
       d: initialPath,
-      transition: { duration: 1, ease: [0.76, 0, 0.25, 1] },
-    },
-  };
+      transition: { duration: 1, ease: [0.76, 0, 0.25, 1] }
+    }
+  }
 
   return (
     <svg className="svgCurve">
@@ -32,7 +32,7 @@ const CurveSvg: React.FC = () => {
         exit="exit"
       ></motion.path>
     </svg>
-  );
-};
+  )
+}
 
-export default CurveSvg;
+export default CurveSvg
