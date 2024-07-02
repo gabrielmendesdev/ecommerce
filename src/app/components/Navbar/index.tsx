@@ -4,7 +4,7 @@ import * as Import from './imports'
 import * as Assets from './assets'
 import Image from 'next/image'
 import './styles.scss'
-import Nav from '../Nav'
+import Nav from '../Nav/index'
 import { useState } from 'react'
 
 export function NavbarComponent() {
