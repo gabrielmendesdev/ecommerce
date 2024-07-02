@@ -17,6 +17,8 @@ export function CarrouselComponent({ onSlideChange }: any) {
     onSlideChange(index)
   }
 
+  //add push
+
   return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 container m-auto border-0">
       <Carousel
