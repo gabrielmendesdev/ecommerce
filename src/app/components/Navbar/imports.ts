@@ -9,8 +9,11 @@ import {
   NavbarBrand,
   NavbarCollapse,
   NavbarLink,
-  NavbarToggle,
-} from "flowbite-react";
+  NavbarToggle
+} from 'flowbite-react'
+
+import { SearchInput } from './SearchInput'
+import { AnimatePresence } from 'framer-motion'
 
 export {
   Avatar,
@@ -23,4 +26,6 @@ export {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
-};
+  SearchInput,
+  AnimatePresence
+}
